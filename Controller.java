@@ -6,19 +6,18 @@ import android.support.v7.app.AppCompatActivity;
 /**
  * Created by Strandberg95 on 2016-03-21.
  */
-public class Controller extends AppCompatActivity {
+public class Controller  {
 
-    private CSNActivity viewer;
+    //private CSNActivity viewer;
     private Calculator calc;
 
     public Controller(){
-        viewer = new CSNActivity();
+        //viewer = new CSNActivity();
         calc = new Calculator();
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_csn);
+    public float calculatePercentage(float earned){
+        return calc.calculatePercentage(earned);
     }
+
 }
