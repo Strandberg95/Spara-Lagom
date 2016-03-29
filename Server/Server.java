@@ -5,6 +5,7 @@ import java.io.BufferedOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -41,6 +42,7 @@ public class Server extends Thread {
 			try {
 				dis = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
 				dos = new DataOutputStream(new BufferedOutputStream(socket.getOutputStream()));
+				
 			} catch (IOException e) {}
 		}
 		
